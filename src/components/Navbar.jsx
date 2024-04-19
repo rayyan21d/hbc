@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Havbar = () => {
 
@@ -92,11 +93,15 @@ const Havbar = () => {
            
             <div className='bg-slate-300 -mx-8 w-[400px] py-4 top-14 gap-y-4 absolute grid pl-3 '>
                 {links.map((link, index) => (
-                    <a href={link.path} key={link.name+"OPEN"}>
-                        <button key={index} className='cursor-pointer px-4' >
-                        {link.name}
-                    </button>
-                    </a>
+                   <div className='cursor-pointer px-4' key={link.name +"DIV"}>
+
+                            <Link to={link.path} >
+                           
+                            {link.name}
+                        
+                        </Link>
+
+                        </div>
                 ))}
                 
             </div>
@@ -125,11 +130,18 @@ const Havbar = () => {
 
                 <div className='hidden sm:flex gap-4'>
                     {links.map((link, index) => (
-                        <a href={link.path} key={link.name+"DESK"}>
-                            <button key={index} className='cursor-pointer px-4' >
+                        
+                        <div className='cursor-pointer px-4' key={link.name +"DIV"}>
+
+                            <Link to={link.path} >
+                           
                             {link.name}
-                        </button>
-                        </a>
+                        
+                        </Link>
+
+                        </div>
+
+                        
                     ))}
                 </div>
             </>
