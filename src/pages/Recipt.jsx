@@ -1,5 +1,5 @@
 import {useState} from 'react'
-
+import image from '/public/assets/image.png'
 const SignIn = () => {
 
   const [email, setEmail] = useState('');
@@ -76,7 +76,7 @@ const SignIn = () => {
             <label className="block mb-3  font-medium text-black">QR</label>
 
             <div className="block bg-gray-100 border-2 disable-pointer-events  ">
-            <img src="./../../src/assets/image.png" alt="" />
+            <img src={image} alt="" />
            
           </div>
 
