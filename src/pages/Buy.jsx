@@ -63,7 +63,7 @@ const SignIn = () => {
           </div>
 
            <div className="bg-gray-100 border-2 disable-pointer-events flex flex-col items-center ">
-            <img src="/src/assets/image.png" alt="" />
+            <img src="./../../src/assets/image.png" alt="" />
            
           </div>
 
